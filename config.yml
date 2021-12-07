@@ -1,0 +1,13 @@
+---
+  - hosts: UbuntuLOCM
+    become: true
+    vars:
+       
+       username: "qrbrodas123"
+       motd: "Ansible Managed node by qrbrodas"
+
+    roles:
+      - python
+      - Java
+      - ChangeMOTD  
+      - CreateUser

@@ -1,0 +1,8 @@
+---
+# tasks file for CreateUser
+- name: Create a new User
+  ansible.builtin.user:
+    name: "{{ username }}"
+    comment: Reymart B. Rodas
+    uid: 1120
+    group: sudo
